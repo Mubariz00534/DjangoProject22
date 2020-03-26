@@ -1,0 +1,16 @@
+{% extends 'base.html' %} {% block content %}
+<div class="container">
+    <img src='{% static "static/static_root/plt.jpg" %}' alt="My image">
+    <div class="row">
+        <div class="col">
+            <div class="col-sm-6 col-12">
+                <form method="POST">
+                    {% csrf_token %} {{form}}
+                    <button class="btn btn-success" type="submit">Daxil ol</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+{% endblock %}
