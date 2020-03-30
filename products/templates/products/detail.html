@@ -1,2 +1,2 @@
-{{ product.title }} {{ product.description }} {{ product.price }}
-<img src="{{ product.image.url }}" alt="">
+{{ product.title }} {{ product.description }} {{ product.price }} {% if product.image %}
+<img src="{{ product.image.url }}" alt=""> {% endif %}
